@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { arc, scaleOrdinal, min, pie, schemeCategory20c } from "d3";
+import { arc, min, pie } from "d3";
 
 class DonutChart extends Component {
   renderPie() {
     const { data, innerRadius, outerRadius, width, height, valueKey } = this.props;
     const radius = min([width, height]) / 2
-    const color = scaleOrdinal(schemeCategory20c);
 
     const arcTween = arc()
       .outerRadius(radius - innerRadius)

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { scaleLinear, scaleBand, scaleOrdinal, max, schemeCategory10 } from "d3";
-import Chart from "./Chart";
+import { scaleLinear, scaleBand, max } from "d3";
 import Axis from "./Axis";
 import BarChartPropTypes from './CommonBarChartPropTypes'
 
