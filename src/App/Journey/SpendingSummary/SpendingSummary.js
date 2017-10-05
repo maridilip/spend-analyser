@@ -41,9 +41,6 @@ const donutChartProps = {
 }
 export default () => (
   <div>
-    <Card>
-      <span>Spending Summary page</span>
-    </Card>
     <Chart {...chartProps} />
     <Chart {...verticalChartProps} />
     <Chart {...donutChartProps} />

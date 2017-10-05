@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://siebel.com/webservices">
+   <soapenv:Header>
+      <UsernameToken xmlns="http://siebel.com/webservices">BRANCHWOW</UsernameToken>
+      <PasswordText xmlns="http://siebel.com/webservices">BRANCHWOW</PasswordText>
+      <SessionType xmlns="http://siebel.com/webservices">None</SessionType>
+   </soapenv:Header>
+   <soapenv:Body>
+      <web:GetOpty>
+         <AssignedTo></AssignedTo>
+         <StartRow></StartRow>
+         <PageSize>100</PageSize>
+         <SortSpec></SortSpec>
+         <IsLastRow></IsLastRow>
+         <Banker_LId>L098510</Banker_LId>
+         <MyTeam></MyTeam>
+      </web:GetOpty>
+   </soapenv:Body>
+</soapenv:Envelope>

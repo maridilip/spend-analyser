@@ -1,0 +1,19 @@
+@import './variables.scss';
+@import './background.svg.scss';
+@import '../Shell/Components/TitleBar/TitleBar.scss';
+@import '../Components/Navigation/Navigation.scss';
+@import '../Journey/Leads/Components/LeadsWidget/LeadsWidget.scss';
+
+.westpac-navbar{
+    background-color: $nav-bar-background-color;
+    .nav-item{
+        a{
+            color:$nav-bar-menu-unselected-font-color;
+        }
+        &.selected{
+            a{
+                color:$nav-bar-menu-selected-font-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.title-bar{
+    .title-row{
+        margin: 0;
+        height: 66px;
+        .menu{
+            background-position: center center;
+            background-color: #f4f3f0;
+            height: 100%;
+        }
+        .logo{
+            height: 100%;
+            .logo-wbc-200{
+                background-position: 10px center;
+                display: block;  
+                height: 100%;          
+            }
+        }
+    }
+    .ribbon-cointaner{
+        margin: 0;
+        height: 150px;
+        background-image: url('/assets/images/swimming_icon.jpg');
+        background-color:#d5002b; 
+        background-repeat: no-repeat;
+        background-position: 133% 0;
+        background-size: 43%;
+        .ribbon{
+            color: #fff;
+            height: 100%;
+            background-size: auto 100%;
+            background-position: 70% center;
+        }
+    }
+}
