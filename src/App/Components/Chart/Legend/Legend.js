@@ -13,7 +13,7 @@ class Legend extends Component {
   }
 
   render() {
-    const { type, data } = this.props
+    const { type, data, labelKey } = this.props
     const legenedTypeStyle = type === 'circle' ? styles.legendCircle : {}
     const Legends = data.map((item, index) => {
       const iconStyles = {
@@ -25,9 +25,10 @@ class Legend extends Component {
         backgroundColor: item.color
       }
       return <div style={styles.legendContent}
+        key={`legends-${index}`}
         onClick={() => this.onClick(item)}>
         <div style={iconStyles}> </div>
-        <span>{` - ${item.label}`}</span>
+        <span>{` - ${(item[labelKey] || '')}`.toLowerCase()}</span>
       </div>
     })
     return (<div className="chart-legends">
@@ -42,7 +43,6 @@ export default Legend
 Legend.propTypes = {
   type: PropTypes.shape("circle", "rect").isRequired,
   data: PropTypes.array.isRequired,
-  position: PropTypes.shape("top", "left", "bottom", "right").isRequired,
   onClick: PropTypes.func,
   colorScheme: PropTypes.array
 }

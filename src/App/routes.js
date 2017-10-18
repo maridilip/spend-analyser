@@ -1,15 +1,21 @@
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 
-import Opportunities from './Journey/Opportunities'
-import SpendingSummary from './Journey/SpendingSummary'
-import Leads from './Journey/Leads'
+import Overview from './Journey/Overview'
+import CustomerDetails from './Journey/CustomerDetails'
+// import Leads from './Journey/Leads'
+// import Opportunities from './Journey/Opportunities'
+// import SpendingSummary from './Journey/SpendingSummary'
 
-const Routes = () => (<Switch>
-  <Route exact path="/SpendingSummary" component={SpendingSummary} />
-  <Route path="/Leads" component={Leads} />
-  <Route path="/Opportunities" component={Opportunities} />
-  <Redirect from="/" to="SpendingSummary" />
-</Switch>)
-
+const NoMatch = () => <Redirect to="/Overview" />
+const Routes = () => {
+  return <div>
+    <Route exact path={"/Overview"} component={Overview} />
+    {/* <Route path={"/Leads"} component={Leads} />
+    <Route path={"/Opportunities"} component={Opportunities} />
+    <Route path={"/SpendingSummary"} component={SpendingSummary} /> */}
+    <Route path={"/CustomerDetails"} component={CustomerDetails} /> 
+    <Route component={NoMatch} />
+  </div>
+}
 export default Routes

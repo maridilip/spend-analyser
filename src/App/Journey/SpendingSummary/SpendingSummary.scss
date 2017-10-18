@@ -1,0 +1,36 @@
+.category-header {
+    sub {
+        bottom: 4px;
+    }
+}
+
+.spending-summary-table {
+    width: 100%;
+    .table-list-body-row {
+        .table-body-row-cell {
+            &.Category {
+                text-transform: capitalize;
+            }
+            &.Amount {
+                text-align: right;
+            }
+            .vendor-name {
+                width: 100px;
+                .vendor-name-content {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+    &.only-transaction {
+        .table-list-body-row {
+            .table-body-row-cell {
+                .vendor-name {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

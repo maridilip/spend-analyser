@@ -1,0 +1,16 @@
+.tool-tip{
+    background-color: #FFF;
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #cacaca;
+    -webkit-box-shadow: 1px 2px 8px -3px #7a7a7a;
+    -moz-box-shadow: 1px 2px 8px -3px #7a7a7a;
+    box-shadow: 1px 2px 8px -3px #7a7a7a;
+    border-radius: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
+    .transaction-details{
+        border-top: 1px solid #e6e5e5;        
+    }
+}

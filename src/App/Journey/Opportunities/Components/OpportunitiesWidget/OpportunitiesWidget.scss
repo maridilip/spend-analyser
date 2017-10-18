@@ -1,0 +1,37 @@
+.opportunities{
+    min-height: 160px;
+    .opportunit-widget{
+        height: 150px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border: 1px solid #efe9e9;
+        padding: 10px;
+        background-color: #efeff0;
+        color:#575f65;
+        position: relative;
+        -webkit-box-shadow: inset 0px 1px 30px 0px  #d6d6d6;
+        -moz-box-shadow: inset 0px 1px 30px 0px  #d6d6d6;
+        box-shadow: inset 0px 1px 30px 0px  #d6d6d6;
+        .opportunity-name{
+            color: #621a4b;
+            text-transform: capitalize;
+            h4{                
+                margin-top:0px; 
+            }
+        }
+        .product-type{
+        }
+        .opportunity-assigned{
+        }
+        .opportunity-assigned{
+            text-transform: capitalize;
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+            position: absolute;
+            sub{
+                font-size: 100%;
+            }
+        }
+    }
+}

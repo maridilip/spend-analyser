@@ -1,0 +1,11 @@
+.top-catergories{
+    .top-catergories-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        .category{
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,24 +1,14 @@
 import React from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import { withRouter, Link } from 'react-router-dom';
 
-const navigatorData = [{
-    path: '/SpendingSummary',
-    content: 'Spending Summary'
-}, {
-    path: '/Leads',
-    content: 'Leads'
-}, {
-    path: '/Opportunities',
-    content: 'Opportunities'
-}]
-const Navigation = ({ location }) => (<Navbar className="westpac-navbar">
+const Navigation = ({ navigatorData, location }) => (<Navbar className="westpac-navbar">
     <Nav>
-        {navigatorData.map(item => {
+        {navigatorData.map((item, index) => {
             const className = item.path === location.pathname ? 'selected' : ''
-            return <NavItem className={`nav-item ${className}`}>
+            return <li key={`nav-item-${index}`} className={`nav-item ${className}`}>
                 <Link to={item.path} ><h4>{item.content}</h4></Link>
-            </NavItem>
+            </li>
         })}
     </Nav>
 </Navbar>)

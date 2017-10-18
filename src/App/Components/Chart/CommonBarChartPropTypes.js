@@ -15,4 +15,5 @@ export default {
   showLegend: PropTypes.bool.isRequired,
   valueKey: PropTypes.string.isRequired,
   labelKey: PropTypes.string.isRequired,
+  onHover: PropTypes.func.isRequired
 };

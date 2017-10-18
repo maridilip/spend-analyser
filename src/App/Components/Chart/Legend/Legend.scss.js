@@ -3,7 +3,7 @@ export default {
     borderRadius: "50%"
   },
   legendContent: {
-    float: "left"
+    textTransform: "capitalize"
   },
   legendContainer: {
     margin: "0 auto"

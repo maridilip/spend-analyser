@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'GraphikBold';
+    src: url('./fonts/Graphik-Bold-Web.woff') format('woff');
+}
+@font-face {
+    font-family: 'GraphikLight';
+    src: url('./fonts/Graphik-Light-Web.woff') format('woff');
+}
+@font-face {
+    font-family: 'GraphikRegular';
+    src: url('./fonts/Graphik-Regular-Web.woff') format('woff');
+}
+@font-face {
+    font-family: 'GuardianEgypLightIt';
+    src: url('./fonts/GuardianEgyp-LightIt-Web.woff') format('woff');
+}
+
+@mixin font-thin(){
+    font-family: 'GraphikLight';
+    font-weight: 100;
+}
+@mixin font-extra-light(){
+    font-family: 'GraphikLight';
+    font-weight: 200;
+}
+@mixin font-light(){
+    font-family: 'GraphikLight';
+    font-weight: 300;
+}
+@mixin font-regular(){
+    font-family: 'GraphikRegular';
+    font-weight: 400;
+}
+@mixin font-medium(){
+    font-family: 'GraphikRegular';
+    font-weight: 500;
+} 
+@mixin font-semi-bold(){
+    font-family: 'GraphikBold';
+    font-weight: 600;
+} 
+@mixin font-bold(){
+    font-family: 'GraphikBold';
+    font-weight: 700;
+}   
+@mixin font-bold-black(){
+    font-family: 'GraphikBold';
+    font-weight: 800;
+}   
+@mixin font-super(){
+    font-family: 'GraphikBold';
+    font-weight: 900;
+}  
+
+h1,h2,h3,h4,h5,h6{
+    margin-top:0px; 
+    @include font-regular();
+}
