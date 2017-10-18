@@ -127,7 +127,10 @@ class SpendingSummary extends Component {
   getRangeBasedData(serviceResponse) {
     const response = serviceResponse || this.state.serviceResponse
     const extentBasedOnDate = extent(response, (item) => moment(item.date, 'DD/MM/YYYY').toDate())
-    const rangeBasedData = response.filter(item => {
+    const rangeBasedData = response.map(item=>{
+      item.amount = parseFloat(parseFloat(item.amount.replace(/,/g,'')).toFixed(2))
+      return item
+    }).filter(item => {
       const maxDate = moment(extentBasedOnDate[1])
       const minDate = moment(extentBasedOnDate[1]).subtract(this.state.dateRangeSelected.value, "days")
       const currentDate = moment(item.date, 'DD/MM/YYYY')
@@ -135,8 +138,9 @@ class SpendingSummary extends Component {
     })
     const nestedData = nest()
       .key(d => d.category)
-      .rollup(data => data.reduce((total, current) =>
-        (total + parseInt(current.amount, 10)), 0))
+      .rollup(data => data.reduce((total, current) =>{
+        return total + current.amount
+      }, 0))        
       .entries(rangeBasedData)
 
     this.setState({

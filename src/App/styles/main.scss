@@ -1,8 +1,24 @@
 @import './variables.scss';
+@import './typography.scss';
 @import './background.svg.scss';
 @import '../Shell/Components/TitleBar/TitleBar.scss';
 @import '../Components/Navigation/Navigation.scss';
 @import '../Journey/Leads/Components/LeadsWidget/LeadsWidget.scss';
+@import '../Components/Table/Table.scss';
+@import '../Components/Chart/ToolTip/ToolTip.scss';
+@import '../Components/Section/Section.scss';
+@import '../Components/Loader/Loader.scss';
+@import '../Journey/Opportunities/Components/OpportunitiesWidget/OpportunitiesWidget.scss';
+@import '../Components/WidgetOverlay/WidgetOverlay.scss';
+@import '../Journey/SpendingSummary/Components/TopCategoriesWidget/TopCategoriesWidget.scss';
+@import '../Journey/SpendingSummary/Components/AccountsWidget/AccountsWidget.scss';
+@import '../Journey/SpendingSummary/SpendingSummary.scss';
+
+body,svg{
+    @include font-light();
+    line-height: 1.428571429;
+    color: #2d373e;
+}
 
 .westpac-navbar{
     background-color: $nav-bar-background-color;

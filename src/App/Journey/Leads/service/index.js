@@ -10,7 +10,7 @@ export const getLeadsData = (oprId) => {
     const config = {
         stubUrl: '/data/leads/Output.xml',
         url: `${proxyUrl}${serviceUrl}`,
-        isStub: false,
+        isStub: true,
         method: 'POST',
         headers: {
             SOAPAction: '"SGB_BANKER_LEADS_DETAILS.v1"'

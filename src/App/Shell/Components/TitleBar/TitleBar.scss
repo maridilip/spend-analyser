@@ -19,16 +19,26 @@
     .ribbon-cointaner{
         margin: 0;
         height: 150px;
-        background-image: url('/assets/images/swimming_icon.jpg');
+        // background-image: url('./swimming_icon.png');
         background-color:#d5002b; 
         background-repeat: no-repeat;
         background-position: 133% 0;
         background-size: 43%;
         .ribbon{
+            h1{
+                margin-top: 20px;
+            }
             color: #fff;
             height: 100%;
             background-size: auto 100%;
             background-position: 70% center;
+            .customer-details{
+                line-height: 2;
+                margin: 17px 0px;
+            }
+            .customer-name{
+                text-transform: capitalize;
+            }
         }
     }
 }
