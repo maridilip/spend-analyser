@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <SOAP-ENV:Body>
+      <ns:GetOpportunities_Output xmlns:ns="http://siebel.com/webservices">
+         <ns:Error_spcCode />
+         <ns:Error_spcMessage />
+         <ns:IsLastRow>false</ns:IsLastRow>
+         <ns:NumOfRows>5</ns:NumOfRows>
+         <ListOfWbcOpportunityLightweightIoMs xmlns="http://www.siebel.com/xml/WBC%20Opportunity%20Lightweight%20IO%20BD">
+            <WbcOpportunityLightweightMs>
+               <FullName>KUNAL THAKARE</FullName>
+               <Position>RETAIL NSW INNER WEST REG GEN MGR</Position>
+               <Position_Id>1-8RN89H</Position_Id>
+               <SalesRep>L072329</SalesRep>
+               <WBCCustomerNumber>78978978</WBCCustomerNumber>
+               <AccountId>No Match Row Id</AccountId>
+               <ApplicationAmount />
+               <ApplicationFlag>N</ApplicationFlag>
+               <CampConId />
+               <Channel>WIB</Channel>
+               <CreatedDate>10/26/2015 11:12:48</CreatedDate>
+               <CurrencyCode>AUD</CurrencyCode>
+               <Description>zxzxz</Description>
+               <KeyContactId>1-9SKY59</KeyContactId>
+               <OpportunitySalesStatus />
+               <PrimaryOrganizationId>0-R9NH</PrimaryOrganizationId>
+               <PrimaryPositionId>1-8RN89H</PrimaryPositionId>
+               <PrimaryProductId />
+               <PrimaryRevenueAmount>0</PrimaryRevenueAmount>
+               <PrimaryRevenueCloseDate />
+               <PrimarySourceId>No Match Row Id</PrimarySourceId>
+               <Program />
+               <ReasonWonLost />
+               <RowId>1-1332IP0</RowId>
+               <SalesStage />
+               <SalesStageId />
+               <WBCANZSICCode />
+               <WBCANZSICDescription />
+               <WBCAggregatorName />
+               <WBCBrokerReferrerName />
+               <WBCComments />
+               <WBCCommitment />
+               <WBCCommitmentDate />
+               <WBCCreatedBy>10/26/2015 11:12:48</WBCCreatedBy>
+               <WBCCreatedByFirstName>KUNAL</WBCCreatedByFirstName>
+               <WBCCreatedByFullName>KUNAL THAKARE</WBCCreatedByFullName>
+               <WBCCreatedByLastName>THAKARE</WBCCreatedByLastName>
+               <WBCCreatorBSB />
+               <WBCCreatorSalary />
+               <WBCCustPrefContactDateTime />
+               <WBCDeposits />
+               <WBCDrawdownAmount />
+               <WBCExpectedCompletionDate />
+               <WBCHandoffStatus>Not Applicable</WBCHandoffStatus>
+               <WBCInitiatingBSBId />
+               <WBCInitiatingBSBNumber />
+               <WBCInitiatingChannelPrimaryAddressId />
+               <WBCLeadCampaignId />
+               <WBCLeadParentCampaignId />
+               <WBCLeadParentCampaignName />
+               <WBCOpportunityName>xzxzxz</WBCOpportunityName>
+               <WBCPackagedFlag />
+               <WBCProductType />
+               <WBCReference />
+               <WBCRegularRevenue />
+               <WBCSalesId />
+               <WBCSingleRevenue />
+               <WBCSource>External</WBCSource>
+               <WBCSpouseFlag>N</WBCSpouseFlag>
+               <WBCThirdPartyRefNum />
+               <WBCCommunicationName />
+               <ListOfWBCOpportunityLightweightMS_Position>
+                  <WBCOpportunityLightweightMS_Position IsPrimaryMVG="Y">
+                     <RowStatus>N</RowStatus>
+                     <SalesRep>L072329</SalesRep>
+                  </WBCOpportunityLightweightMS_Position>
+               </ListOfWBCOpportunityLightweightMS_Position>
+               <ListOfWBCOpportunityLightweightMS_FINContact>
+                  <WBCOpportunityLightweightMS_FINContact IsPrimaryMVG="Y">
+                     <KeyContactFirstName>AAAM</KeyContactFirstName>
+                     <KeyContactLastName>AAK</KeyContactLastName>
+                     <PersonalContact>N</PersonalContact>
+                     <EmployeeNumber>1-9SKY59</EmployeeNumber>
+                     <AccountIntegrationId />
+                     <PrimaryAccountName />
+                     <PersonUId>1-9SKY59</PersonUId>
+                     <PrimaryOrganization>Default Organization</PrimaryOrganization>
+                  </WBCOpportunityLightweightMS_FINContact>
+               </ListOfWBCOpportunityLightweightMS_FINContact>
+               <ListOfWBCOpportunityLightweightMS_Organization>
+                  <WBCOpportunityLightweightMS_Organization IsPrimaryMVG="Y">
+                     <Organization>Default Organization</Organization>
+                     <OrganizationId>0-R9NH</OrganizationId>
+                     <IntegrationId />
+                     <Location>INTERNAL</Location>
+                  </WBCOpportunityLightweightMS_Organization>
+               </ListOfWBCOpportunityLightweightMS_Organization>
+               <ListOfWBCOpportunityLightweightMS_Account />
+               <ListOfWBCOpportunityLightweightMS_Source />
+            </WbcOpportunityLightweightMs>
+            <WbcOpportunityLightweightMs>
+               <FullName>TEJASWEENE HATGINE</FullName>
+               <Position>Branch Inbox</Position>
+               <Position_Id>1-8J4OFD</Position_Id>
+               <SalesRep>L068725</SalesRep>
+               <WBCCustomerNumber>123456789</WBCCustomerNumber>
+               <AccountId>No Match Row Id</AccountId>
+               <ApplicationAmount />
+               <ApplicationFlag>N</ApplicationFlag>
+               <CampConId />
+               <Channel>Branch</Channel>
+               <CreatedDate>04/05/2016 20:05:23</CreatedDate>
+               <CurrencyCode>AUD</CurrencyCode>
+               <Description>Showcase Opty</Description>
+               <KeyContactId>1-1PW-80</KeyContactId>
+               <OpportunitySalesStatus>Open</OpportunitySalesStatus>
+               <PrimaryOrganizationId>0-R9NH</PrimaryOrganizationId>
+               <PrimaryPositionId>1-8J4OFD</PrimaryPositionId>
+               <PrimaryProductId>1-13X43O7</PrimaryProductId>
+               <PrimaryRevenueAmount />
+               <PrimaryRevenueCloseDate />
+               <PrimarySourceId>No Match Row Id</PrimarySourceId>
+               <Program />
+               <ReasonWonLost />
+               <RowId>1-13RRTNL</RowId>
+               <SalesStage>Opportunity</SalesStage>
+               <SalesStageId>1-3WA4</SalesStageId>
+               <WBCANZSICCode />
+               <WBCANZSICDescription />
+               <WBCAggregatorName />
+               <WBCBrokerReferrerName />
+               <WBCComments>Open Account</WBCComments>
+               <WBCCommitment />
+               <WBCCommitmentDate />
+               <WBCCreatedBy>04/05/2016 20:05:23</WBCCreatedBy>
+               <WBCCreatedByFirstName>Siebel</WBCCreatedByFirstName>
+               <WBCCreatedByFullName>SIEBEL ADMINISTRATOR</WBCCreatedByFullName>
+               <WBCCreatedByLastName>Administrator</WBCCreatedByLastName>
+               <WBCCreatorBSB />
+               <WBCCreatorSalary />
+               <WBCCustPrefContactDateTime />
+               <WBCDeposits />
+               <WBCDrawdownAmount />
+               <WBCExpectedCompletionDate>07/19/2016 00:00:00</WBCExpectedCompletionDate>
+               <WBCHandoffStatus>Not Applicable</WBCHandoffStatus>
+               <WBCInitiatingBSBId />
+               <WBCInitiatingBSBNumber />
+               <WBCInitiatingChannelPrimaryAddressId />
+               <WBCLeadCampaignId />
+               <WBCLeadParentCampaignId />
+               <WBCLeadParentCampaignName />
+               <WBCOpportunityName>Showcase Opty</WBCOpportunityName>
+               <WBCPackagedFlag />
+               <WBCProductType>Personal Loan - Unsecured</WBCProductType>
+               <WBCReference />
+               <WBCRegularRevenue />
+               <WBCSalesId />
+               <WBCSingleRevenue />
+               <WBCSource>Customer</WBCSource>
+               <WBCSpouseFlag>N</WBCSpouseFlag>
+               <WBCThirdPartyRefNum />
+               <WBCCommunicationName />
+               <ListOfWBCOpportunityLightweightMS_Position>
+                  <WBCOpportunityLightweightMS_Position IsPrimaryMVG="Y">
+                     <RowStatus>Y</RowStatus>
+                     <SalesRep>L068725</SalesRep>
+                  </WBCOpportunityLightweightMS_Position>
+                  <WBCOpportunityLightweightMS_Position IsPrimaryMVG="N">
+                     <RowStatus>N</RowStatus>
+                     <SalesRep>L072329</SalesRep>
+                  </WBCOpportunityLightweightMS_Position>
+                  <WBCOpportunityLightweightMS_Position IsPrimaryMVG="N">
+                     <RowStatus>N</RowStatus>
+                     <SalesRep>L070592</SalesRep>
+                  </WBCOpportunityLightweightMS_Position>
+               </ListOfWBCOpportunityLightweightMS_Position>
+               <ListOfWBCOpportunityLightweightMS_FINContact>
+                  <WBCOpportunityLightweightMS_FINContact IsPrimaryMVG="Y">
+                     <KeyContactFirstName>JOE</KeyContactFirstName>
+                     <KeyContactLastName>BLOGGS</KeyContactLastName>
+                     <PersonalContact>N</PersonalContact>
+                     <EmployeeNumber />
+                     <AccountIntegrationId />
+                     <PrimaryAccountName>THE BARBER PTY LTD 00000000281</PrimaryAccountName>
+                     <PersonUId>00000000018</PersonUId>
+                     <PrimaryOrganization />
+                  </WBCOpportunityLightweightMS_FINContact>
+               </ListOfWBCOpportunityLightweightMS_FINContact>
+               <ListOfWBCOpportunityLightweightMS_Organization>
+                  <WBCOpportunityLightweightMS_Organization IsPrimaryMVG="Y">
+                     <Organization>Default Organization</Organization>
+                     <OrganizationId>0-R9NH</OrganizationId>
+                     <IntegrationId />
+                     <Location>INTERNAL</Location>
+                  </WBCOpportunityLightweightMS_Organization>
+               </ListOfWBCOpportunityLightweightMS_Organization>
+               <ListOfWBCOpportunityLightweightMS_Account />
+               <ListOfWBCOpportunityLightweightMS_Source />
+            </WbcOpportunityLightweightMs>
+            <WbcOpportunityLightweightMs>
+               <FullName>KUNAL THAKARE</FullName>
+               <Position>RETAIL NSW INNER WEST REG GEN MGR</Position>
+               <Position_Id>1-8RN89H</Position_Id>
+               <SalesRep>L072329</SalesRep>
+               <WBCCustomerNumber>01957991</WBCCustomerNumber>
+               <AccountId>No Match Row Id</AccountId>
+               <ApplicationAmount />
+               <ApplicationFlag>N</ApplicationFlag>
+               <CampConId />
+               <Channel>Branch</Channel>
+               <CreatedDate>07/21/2016 15:51:45</CreatedDate>
+               <CurrencyCode>AUD</CurrencyCode>
+               <Description>test</Description>
+               <KeyContactId>1-BIA6HV</KeyContactId>
+               <OpportunitySalesStatus>Open</OpportunitySalesStatus>
+               <PrimaryOrganizationId>0-R9NH</PrimaryOrganizationId>
+               <PrimaryPositionId>1-8RN89H</PrimaryPositionId>
+               <PrimaryProductId>1-7D3F4C</PrimaryProductId>
+               <PrimaryRevenueAmount />
+               <PrimaryRevenueCloseDate />
+               <PrimarySourceId>No Match Row Id</PrimarySourceId>
+               <Program />
+               <ReasonWonLost />
+               <RowId>1-13Z1MOF</RowId>
+               <SalesStage>Opportunity</SalesStage>
+               <SalesStageId>1-3WA4</SalesStageId>
+               <WBCANZSICCode />
+               <WBCANZSICDescription />
+               <WBCAggregatorName />
+               <WBCBrokerReferrerName />
+               <WBCComments>UPL</WBCComments>
+               <WBCCommitment />
+               <WBCCommitmentDate />
+               <WBCCreatedBy>07/21/2016 15:51:45</WBCCreatedBy>
+               <WBCCreatedByFirstName>KUNAL</WBCCreatedByFirstName>
+               <WBCCreatedByFullName>KUNAL THAKARE</WBCCreatedByFullName>
+               <WBCCreatedByLastName>THAKARE</WBCCreatedByLastName>
+               <WBCCreatorBSB />
+               <WBCCreatorSalary />
+               <WBCCustPrefContactDateTime />
+               <WBCDeposits />
+               <WBCDrawdownAmount />
+               <WBCExpectedCompletionDate />
+               <WBCHandoffStatus>Not Applicable</WBCHandoffStatus>
+               <WBCInitiatingBSBId />
+               <WBCInitiatingBSBNumber />
+               <WBCInitiatingChannelPrimaryAddressId />
+               <WBCLeadCampaignId />
+               <WBCLeadParentCampaignId />
+               <WBCLeadParentCampaignName />
+               <WBCOpportunityName>Transaction Account</WBCOpportunityName>
+               <WBCPackagedFlag />
+               <WBCProductType>Westpac Choice</WBCProductType>
+               <WBCReference />
+               <WBCRegularRevenue />
+               <WBCSalesId />
+               <WBCSingleRevenue />
+               <WBCSource>Profiling</WBCSource>
+               <WBCSpouseFlag>N</WBCSpouseFlag>
+               <WBCThirdPartyRefNum />
+               <WBCCommunicationName />
+               <ListOfWBCOpportunityLightweightMS_Position>
+                  <WBCOpportunityLightweightMS_Position IsPrimaryMVG="Y">
+                     <RowStatus>N</RowStatus>
+                     <SalesRep>L072329</SalesRep>
+                  </WBCOpportunityLightweightMS_Position>
+               </ListOfWBCOpportunityLightweightMS_Position>
+               <ListOfWBCOpportunityLightweightMS_FINContact>
+                  <WBCOpportunityLightweightMS_FINContact IsPrimaryMVG="Y">
+                     <KeyContactFirstName>STEPHEN</KeyContactFirstName>
+                     <KeyContactLastName>JAIN</KeyContactLastName>
+                     <PersonalContact>N</PersonalContact>
+                     <EmployeeNumber>1-BIA6HV</EmployeeNumber>
+                     <AccountIntegrationId />
+                     <PrimaryAccountName />
+                     <PersonUId>1-BIA6HV</PersonUId>
+                     <PrimaryOrganization>Default Organization</PrimaryOrganization>
+                  </WBCOpportunityLightweightMS_FINContact>
+               </ListOfWBCOpportunityLightweightMS_FINContact>
+               <ListOfWBCOpportunityLightweightMS_Organization>
+                  <WBCOpportunityLightweightMS_Organization IsPrimaryMVG="Y">
+                     <Organization>Default Organization</Organization>
+                     <OrganizationId>0-R9NH</OrganizationId>
+                     <IntegrationId />
+                     <Location>INTERNAL</Location>
+                  </WBCOpportunityLightweightMS_Organization>
+               </ListOfWBCOpportunityLightweightMS_Organization>
+               <ListOfWBCOpportunityLightweightMS_Account />
+               <ListOfWBCOpportunityLightweightMS_Source />
+            </WbcOpportunityLightweightMs>
+            <WbcOpportunityLightweightMs>
+               <FullName>KUNAL THAKARE</FullName>
+               <Position>RETAIL NSW INNER WEST REG GEN MGR</Position>
+               <Position_Id>1-8RN89H</Position_Id>
+               <SalesRep>L072329</SalesRep>
+               <WBCCustomerNumber>56965181</WBCCustomerNumber>
+               <AccountId>No Match Row Id</AccountId>
+               <ApplicationAmount />
+               <ApplicationFlag>N</ApplicationFlag>
+               <CampConId />
+               <Channel>Specialised Sales</Channel>
+               <CreatedDate>11/23/2016 13:07:48</CreatedDate>
+               <CurrencyCode>AUD</CurrencyCode>
+               <Description>Test</Description>
+               <KeyContactId>1-9UKXUY</KeyContactId>
+               <OpportunitySalesStatus>Open</OpportunitySalesStatus>
+               <PrimaryOrganizationId>0-R9NH</PrimaryOrganizationId>
+               <PrimaryPositionId>1-8RN89H</PrimaryPositionId>
+               <PrimaryProductId>1-EI3H52</PrimaryProductId>
+               <PrimaryRevenueAmount>1250</PrimaryRevenueAmount>
+               <PrimaryRevenueCloseDate />
+               <PrimarySourceId>No Match Row Id</PrimarySourceId>
+               <Program />
+               <ReasonWonLost />
+               <RowId>1-144ON3W</RowId>
+               <SalesStage>Interview</SalesStage>
+               <SalesStageId>1-3WA8</SalesStageId>
+               <WBCANZSICCode />
+               <WBCANZSICDescription />
+               <WBCAggregatorName />
+               <WBCBrokerReferrerName />
+               <WBCComments>***</WBCComments>
+               <WBCCommitment />
+               <WBCCommitmentDate />
+               <WBCCreatedBy>11/23/2016 13:07:48</WBCCreatedBy>
+               <WBCCreatedByFirstName>KUNAL</WBCCreatedByFirstName>
+               <WBCCreatedByFullName>KUNAL THAKARE</WBCCreatedByFullName>
+               <WBCCreatedByLastName>THAKARE</WBCCreatedByLastName>
+               <WBCCreatorBSB />
+               <WBCCreatorSalary />
+               <WBCCustPrefContactDateTime />
+               <WBCDeposits />
+               <WBCDrawdownAmount />
+               <WBCExpectedCompletionDate>05/25/2017 01:07:48</WBCExpectedCompletionDate>
+               <WBCHandoffStatus>Not Applicable</WBCHandoffStatus>
+               <WBCInitiatingBSBId />
+               <WBCInitiatingBSBNumber />
+               <WBCInitiatingChannelPrimaryAddressId />
+               <WBCLeadCampaignId />
+               <WBCLeadParentCampaignId />
+               <WBCLeadParentCampaignName />
+               <WBCOpportunityName>Property Lending Increase</WBCOpportunityName>
+               <WBCPackagedFlag />
+               <WBCProductType>Home Loan Increase</WBCProductType>
+               <WBCReference />
+               <WBCRegularRevenue />
+               <WBCSalesId />
+               <WBCSingleRevenue />
+               <WBCSource>Profiling</WBCSource>
+               <WBCSpouseFlag>N</WBCSpouseFlag>
+               <WBCThirdPartyRefNum />
+               <WBCCommunicationName />
+               <ListOfWBCOpportunityLightweightMS_Position>
+                  <WBCOpportunityLightweightMS_Position IsPrimaryMVG="Y">
+                     <RowStatus>N</RowStatus>
+                     <SalesRep>L072329</SalesRep>
+                  </WBCOpportunityLightweightMS_Position>
+               </ListOfWBCOpportunityLightweightMS_Position>
+               <ListOfWBCOpportunityLightweightMS_FINContact>
+                  <WBCOpportunityLightweightMS_FINContact IsPrimaryMVG="Y">
+                     <KeyContactFirstName>RISHI</KeyContactFirstName>
+                     <KeyContactLastName>MEHTA</KeyContactLastName>
+                     <PersonalContact>N</PersonalContact>
+                     <EmployeeNumber>1-9UKXUY</EmployeeNumber>
+                     <AccountIntegrationId />
+                     <PrimaryAccountName />
+                     <PersonUId>1-9UKXUY</PersonUId>
+                     <PrimaryOrganization>BCB</PrimaryOrganization>
+                  </WBCOpportunityLightweightMS_FINContact>
+               </ListOfWBCOpportunityLightweightMS_FINContact>
+               <ListOfWBCOpportunityLightweightMS_Organization>
+                  <WBCOpportunityLightweightMS_Organization IsPrimaryMVG="Y">
+                     <Organization>Default Organization</Organization>
+                     <OrganizationId>0-R9NH</OrganizationId>
+                     <IntegrationId />
+                     <Location>INTERNAL</Location>
+                  </WBCOpportunityLightweightMS_Organization>
+               </ListOfWBCOpportunityLightweightMS_Organization>
+               <ListOfWBCOpportunityLightweightMS_Account />
+               <ListOfWBCOpportunityLightweightMS_Source />
+            </WbcOpportunityLightweightMs>
+            <WbcOpportunityLightweightMs>
+               <FullName>KUNAL THAKARE</FullName>
+               <Position>RETAIL NSW INNER WEST REG GEN MGR</Position>
+               <Position_Id>1-8RN89H</Position_Id>
+               <SalesRep>L072329</SalesRep>
+               <WBCCustomerNumber>01957991</WBCCustomerNumber>
+               <AccountId>No Match Row Id</AccountId>
+               <ApplicationAmount />
+               <ApplicationFlag>N</ApplicationFlag>
+               <CampConId />
+               <Channel>Specialised Sales</Channel>
+               <CreatedDate>12/23/2016 10:28:19</CreatedDate>
+               <CurrencyCode>AUD</CurrencyCode>
+               <Description>RL Test Opty</Description>
+               <KeyContactId>1-BIA6HV</KeyContactId>
+               <OpportunitySalesStatus>Open</OpportunitySalesStatus>
+               <PrimaryOrganizationId>0-R9NH</PrimaryOrganizationId>
+               <PrimaryPositionId>1-8RN89H</PrimaryPositionId>
+               <PrimaryProductId>1-EI3H52</PrimaryProductId>
+               <PrimaryRevenueAmount>1234</PrimaryRevenueAmount>
+               <PrimaryRevenueCloseDate />
+               <PrimarySourceId>No Match Row Id</PrimarySourceId>
+               <Program />
+               <ReasonWonLost />
+               <RowId>1-147SM4J</RowId>
+               <SalesStage>Interview</SalesStage>
+               <SalesStageId>1-3WA8</SalesStageId>
+               <WBCANZSICCode />
+               <WBCANZSICDescription />
+               <WBCAggregatorName />
+               <WBCBrokerReferrerName />
+               <WBCComments>***</WBCComments>
+               <WBCCommitment />
+               <WBCCommitmentDate />
+               <WBCCreatedBy>12/23/2016 10:28:19</WBCCreatedBy>
+               <WBCCreatedByFirstName>KUNAL</WBCCreatedByFirstName>
+               <WBCCreatedByFullName>KUNAL THAKARE</WBCCreatedByFullName>
+               <WBCCreatedByLastName>THAKARE</WBCCreatedByLastName>
+               <WBCCreatorBSB />
+               <WBCCreatorSalary />
+               <WBCCustPrefContactDateTime />
+               <WBCDeposits />
+               <WBCDrawdownAmount />
+               <WBCExpectedCompletionDate>06/23/2017 22:28:19</WBCExpectedCompletionDate>
+               <WBCHandoffStatus>Not Applicable</WBCHandoffStatus>
+               <WBCInitiatingBSBId />
+               <WBCInitiatingBSBNumber />
+               <WBCInitiatingChannelPrimaryAddressId />
+               <WBCLeadCampaignId />
+               <WBCLeadParentCampaignId />
+               <WBCLeadParentCampaignName />
+               <WBCOpportunityName>Property Lending Increase</WBCOpportunityName>
+               <WBCPackagedFlag />
+               <WBCProductType>Home Loan Increase</WBCProductType>
+               <WBCReference />
+               <WBCRegularRevenue />
+               <WBCSalesId />
+               <WBCSingleRevenue />
+               <WBCSource>Profiling</WBCSource>
+               <WBCSpouseFlag>N</WBCSpouseFlag>
+               <WBCThirdPartyRefNum />
+               <WBCCommunicationName />
+               <ListOfWBCOpportunityLightweightMS_Position>
+                  <WBCOpportunityLightweightMS_Position IsPrimaryMVG="Y">
+                     <RowStatus>N</RowStatus>
+                     <SalesRep>L072329</SalesRep>
+                  </WBCOpportunityLightweightMS_Position>
+               </ListOfWBCOpportunityLightweightMS_Position>
+               <ListOfWBCOpportunityLightweightMS_FINContact>
+                  <WBCOpportunityLightweightMS_FINContact IsPrimaryMVG="N">
+                     <KeyContactFirstName>DEVESH</KeyContactFirstName>
+                     <KeyContactLastName>GANGRADE</KeyContactLastName>
+                     <PersonalContact>N</PersonalContact>
+                     <EmployeeNumber>1-BIOXCZ</EmployeeNumber>
+                     <AccountIntegrationId />
+                     <PrimaryAccountName />
+                     <PersonUId>1-BIOXCZ</PersonUId>
+                     <PrimaryOrganization>Default Organization</PrimaryOrganization>
+                  </WBCOpportunityLightweightMS_FINContact>
+                  <WBCOpportunityLightweightMS_FINContact IsPrimaryMVG="Y">
+                     <KeyContactFirstName>STEPHEN</KeyContactFirstName>
+                     <KeyContactLastName>JAIN</KeyContactLastName>
+                     <PersonalContact>N</PersonalContact>
+                     <EmployeeNumber>1-BIA6HV</EmployeeNumber>
+                     <AccountIntegrationId />
+                     <PrimaryAccountName />
+                     <PersonUId>1-BIA6HV</PersonUId>
+                     <PrimaryOrganization>Default Organization</PrimaryOrganization>
+                  </WBCOpportunityLightweightMS_FINContact>
+               </ListOfWBCOpportunityLightweightMS_FINContact>
+               <ListOfWBCOpportunityLightweightMS_Organization>
+                  <WBCOpportunityLightweightMS_Organization IsPrimaryMVG="Y">
+                     <Organization>Default Organization</Organization>
+                     <OrganizationId>0-R9NH</OrganizationId>
+                     <IntegrationId />
+                     <Location>INTERNAL</Location>
+                  </WBCOpportunityLightweightMS_Organization>
+               </ListOfWBCOpportunityLightweightMS_Organization>
+               <ListOfWBCOpportunityLightweightMS_Account />
+               <ListOfWBCOpportunityLightweightMS_Source />
+            </WbcOpportunityLightweightMs>
+         </ListOfWbcOpportunityLightweightIoMs>
+         <ns:myJSON />
+      </ns:GetOpportunities_Output>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

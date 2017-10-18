@@ -1,6 +1,6 @@
 import HorizontalBarChart from "./HorizontalBarChart";
 import VerticalBarChart from "./VerticalBarChart";
-import DonutChart from "./DonutChart";
+import DonutChart from "./3DDonutChart";
 
 export default {
   HORIZONTAL_BAR_CHART: HorizontalBarChart,

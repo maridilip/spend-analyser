@@ -5,14 +5,14 @@
       <SessionType xmlns="http://siebel.com/webservices">None</SessionType>
    </soapenv:Header>
    <soapenv:Body>
-      <web:GetOpty>
+      <web:GetOpportunities>
          <AssignedTo></AssignedTo>
-         <StartRow></StartRow>
-         <PageSize>100</PageSize>
-         <SortSpec></SortSpec>
+         <StartRow>0</StartRow>
+         <PageSize>5</PageSize>
+         <SortSpec>Created</SortSpec>
          <IsLastRow></IsLastRow>
          <Banker_LId>L098510</Banker_LId>
          <MyTeam></MyTeam>
-      </web:GetOpty>
+      </web:GetOpportunities>
    </soapenv:Body>
 </soapenv:Envelope>

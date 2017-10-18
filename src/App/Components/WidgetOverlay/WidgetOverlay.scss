@@ -1,0 +1,22 @@
+.widget-overlay{
+    position:relative;
+    .overlay-toggler{
+        position: absolute;
+        height: 0px;
+        bottom: 0;
+        background-color: rgba(182, 0, 11, 1);
+        width: 100%;
+        text-align: center;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.1s ease;
+        a{
+            color: #fff;
+        }
+    }
+    &.hovered{
+        .overlay-toggler{
+            height: 20px;     
+        }
+    }
+}

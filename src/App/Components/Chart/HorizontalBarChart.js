@@ -6,23 +6,11 @@ import BarChartPropTypes from './CommonBarChartPropTypes'
 class BarChart extends Component {
   constructor(props) {
     super(props);
-    const { height, width, margins, data, valueKey } = props;
-    this.svgWidth = width - margins.right - margins.left;
-    this.svgHeight = height - margins.top - margins.bottom;
-
-    this.xScale = scaleLinear()
-      .rangeRound([0, this.svgWidth])
-      .domain([0, max(data, d => d[valueKey])]);
-    this.yScale = scaleBand()
-      .padding(0.1)
-      .rangeRound([0, this.svgHeight])
-      .domain(data.map((d, i) => i));
     this.renderBarGroup = this.renderBarGroup.bind(this);
   }
 
-  renderBarGroup() {
-    const { yScale, xScale } = this;
-    const { margins, data, rx, ry, valueKey } = this.props;
+  renderBarGroup({ yScale, xScale }) {
+    const { margins, data, rx, ry, valueKey, onClick, onHover } = this.props;
 
     return data.map((datum, index) => {
       let barProps = {
@@ -38,20 +26,28 @@ class BarChart extends Component {
       };
 
       return (
-        <g key={index}>
-          <rect {...barProps} />
+        <g key={index} onClick={() => onClick(datum)}
+          onMouseOver={(eve) => onHover(datum, eve)}
+          onMouseOut={() => onHover()}
+        >
+          <rect {...barProps} cursor={"pointer"}/>
         </g>
       );
     });
   }
 
   render() {
-    const { xScale, svgHeight } = this;
-    const {
-      margins,
-      xAxisOrient,
-      xAxisTicks,
-    } = this.props;
+    const { height, width, margins, data, valueKey, xAxisOrient, xAxisTicks } = this.props;
+    const svgWidth = width - margins.right - margins.left;
+    const svgHeight = height - margins.top - margins.bottom;
+    const xScale = scaleLinear()
+      .rangeRound([0, svgWidth])
+      .domain([0, max(data, d => d[valueKey])]);
+    const yScale = scaleBand()
+      .padding(0.1)
+      .rangeRound([0, svgHeight])
+      .domain(data.map((d, i) => i));
+
     const chartMargin = `translate(${margins.left},${margins.top})`;
     const axisMargin = `translate(${margins.left},${svgHeight})`;
 
@@ -62,7 +58,7 @@ class BarChart extends Component {
         noOfTicks={xAxisTicks}
         transform={axisMargin}
       />
-      {this.renderBarGroup()}
+      {this.renderBarGroup({ xScale, yScale })}
     </g>);
   }
 }

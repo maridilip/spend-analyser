@@ -8,9 +8,16 @@ class Axis extends Component {
       this.axisNode = ref
     }
   }
+  componentWillReceiveProps(nextProps) {
+    this.refreshAxis(nextProps)
+  }
 
   componentDidMount() {
-    const { orient, scale, noOfTicks } = this.props
+    this.refreshAxis()
+  }
+
+  refreshAxis(props) {
+    const { orient, scale, noOfTicks } = props || this.props
     const axisOrient = {
       top: axisTop,
       left: axisLeft,

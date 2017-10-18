@@ -1,0 +1,26 @@
+@mixin cell() {
+    th,
+    td {
+        padding: 5px;
+    }
+}
+
+.table-list {
+    .table-list-head {
+        background-color: #efeff0;
+        border-bottom: 1px solid #fff;
+        color: #621a4b;
+        @include cell();
+    }
+    .table-list-body {
+        background-color: #f3f2f2;
+        border-bottom: 1px solid #fff;
+        .table-list-body-row {
+            @include cell();
+        }
+    }
+    .table-row-nodata,
+    .load-more-button {
+        text-align: center;
+    }
+}

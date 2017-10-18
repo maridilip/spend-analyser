@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <SGB_LEADS_RSP_MSG xmlns="http://peoplesoft.com/SGB_LEADS_RSP_MSGResponse">
+         <FieldTypes>
+            <SGB_LEAD_RS0_WK class="R">
+               <OPRID type="CHAR" />
+            </SGB_LEAD_RS0_WK>
+            <SGB_LEAD_RES_WK class="R">
+               <LEAD_ID type="CHAR" />
+               <NAME1 type="CHAR" />
+               <PHONE type="CHAR" />
+               <EMAILID type="CHAR" />
+               <LEAD_STATUS type="CHAR" />
+               <EST_REVENUE type="NUMBER" />
+               <ROW_ADDED_OPRID type="CHAR" />
+               <OPRDEFNDESC type="CHAR" />
+               <RC_SUMMARY type="CHAR" />
+               <DESCRLONG type="CHAR" />
+            </SGB_LEAD_RES_WK>
+            <PSCAMA class="R">
+               <LANGUAGE_CD type="CHAR" />
+               <AUDIT_ACTN type="CHAR" />
+               <BASE_LANGUAGE_CD type="CHAR" />
+               <MSG_SEQ_FLG type="CHAR" />
+               <PROCESS_INSTANCE type="NUMBER" />
+               <PUBLISH_RULE_ID type="CHAR" />
+               <MSGNODENAME type="CHAR" />
+            </PSCAMA>
+         </FieldTypes>
+         <MsgData>
+            <Transaction>
+               <SGB_LEAD_RS0_WK class="R">
+                  <OPRID IsChanged="Y">C79351</OPRID>
+                  <SGB_LEAD_RES_WK class="R">
+                     <LEAD_ID IsChanged="Y">26275</LEAD_ID>
+                     <NAME1 IsChanged="Y">ABCDABCD ABCABC</NAME1>
+                     <PHONE IsChanged="Y">02 55282582</PHONE>
+                     <EMAILID />
+                     <LEAD_STATUS IsChanged="Y">OP</LEAD_STATUS>
+                     <EST_REVENUE IsChanged="Y">5000</EST_REVENUE>
+                     <ROW_ADDED_OPRID IsChanged="Y">C78821</ROW_ADDED_OPRID>
+                     <OPRDEFNDESC IsChanged="Y">Shipra Aggarwal</OPRDEFNDESC>
+                     <RC_SUMMARY IsChanged="Y">Auto Finance Lead-Link Test</RC_SUMMARY>
+                     <DESCRLONG IsChanged="Y">Link Test</DESCRLONG>
+                  </SGB_LEAD_RES_WK>
+                  <SGB_LEAD_RES_WK class="R">
+                     <LEAD_ID IsChanged="Y">26266</LEAD_ID>
+                     <NAME1 IsChanged="Y">*NAPOLETANO COMPANY 7</NAME1>
+                     <PHONE />
+                     <EMAILID />
+                     <LEAD_STATUS IsChanged="Y">OP</LEAD_STATUS>
+                     <EST_REVENUE IsChanged="Y">20000</EST_REVENUE>
+                     <ROW_ADDED_OPRID IsChanged="Y">C78821</ROW_ADDED_OPRID>
+                     <OPRDEFNDESC IsChanged="Y">Shipra Aggarwal</OPRDEFNDESC>
+                     <RC_SUMMARY IsChanged="Y">Business Facilities Lead</RC_SUMMARY>
+                     <DESCRLONG IsChanged="Y">test link2</DESCRLONG>
+                  </SGB_LEAD_RES_WK>
+                  <SGB_LEAD_RES_WK class="R">
+                     <LEAD_ID IsChanged="Y">26265</LEAD_ID>
+                     <NAME1 IsChanged="Y">*RUMMENIE COMPANY 2</NAME1>
+                     <PHONE />
+                     <EMAILID />
+                     <LEAD_STATUS IsChanged="Y">OP</LEAD_STATUS>
+                     <EST_REVENUE IsChanged="Y">80000</EST_REVENUE>
+                     <ROW_ADDED_OPRID IsChanged="Y">C78821</ROW_ADDED_OPRID>
+                     <OPRDEFNDESC IsChanged="Y">Shipra Aggarwal</OPRDEFNDESC>
+                     <RC_SUMMARY IsChanged="Y">Commercial Lead</RC_SUMMARY>
+                     <DESCRLONG IsChanged="Y">Test</DESCRLONG>
+                  </SGB_LEAD_RES_WK>
+                  <SGB_LEAD_RES_WK class="R">
+                     <LEAD_ID IsChanged="Y">26262</LEAD_ID>
+                     <NAME1 IsChanged="Y">Janet Citizenn</NAME1>
+                     <PHONE IsChanged="Y">65667756</PHONE>
+                     <EMAILID />
+                     <LEAD_STATUS IsChanged="Y">OP</LEAD_STATUS>
+                     <EST_REVENUE IsChanged="Y">40000</EST_REVENUE>
+                     <ROW_ADDED_OPRID IsChanged="Y">C78821</ROW_ADDED_OPRID>
+                     <OPRDEFNDESC IsChanged="Y">Shipra Aggarwal</OPRDEFNDESC>
+                     <RC_SUMMARY IsChanged="Y">Check Lead for Micro service</RC_SUMMARY>
+                     <DESCRLONG IsChanged="Y">Check Lead for Micro service</DESCRLONG>
+                  </SGB_LEAD_RES_WK>
+                  <SGB_LEAD_RES_WK class="R">
+                     <LEAD_ID IsChanged="Y">26261</LEAD_ID>
+                     <NAME1 IsChanged="Y">Janet Citizenn</NAME1>
+                     <PHONE IsChanged="Y">65667756</PHONE>
+                     <EMAILID />
+                     <LEAD_STATUS IsChanged="Y">OP</LEAD_STATUS>
+                     <EST_REVENUE IsChanged="Y">15000</EST_REVENUE>
+                     <ROW_ADDED_OPRID IsChanged="Y">C78821</ROW_ADDED_OPRID>
+                     <OPRDEFNDESC IsChanged="Y">Shipra Aggarwal</OPRDEFNDESC>
+                     <RC_SUMMARY IsChanged="Y">Business Account Lead</RC_SUMMARY>
+                     <DESCRLONG IsChanged="Y">Test Lead2</DESCRLONG>
+                  </SGB_LEAD_RES_WK>
+                  <SGB_LEAD_RES_WK class="R">
+                     <LEAD_ID IsChanged="Y">26259</LEAD_ID>
+                     <NAME1 IsChanged="Y">JANET CITIZEN</NAME1>
+                     <PHONE />
+                     <EMAILID />
+                     <LEAD_STATUS IsChanged="Y">OP</LEAD_STATUS>
+                     <EST_REVENUE IsChanged="Y">10000</EST_REVENUE>
+                     <ROW_ADDED_OPRID IsChanged="Y">C78821</ROW_ADDED_OPRID>
+                     <OPRDEFNDESC IsChanged="Y">Shipra Aggarwal</OPRDEFNDESC>
+                     <RC_SUMMARY IsChanged="Y">BT Super Lead</RC_SUMMARY>
+                     <DESCRLONG IsChanged="Y">Test1</DESCRLONG>
+                  </SGB_LEAD_RES_WK>
+                  <SGB_LEAD_RES_WK class="R">
+                     <LEAD_ID IsChanged="Y">26235</LEAD_ID>
+                     <NAME1 IsChanged="Y">LORELLE RENHUI SUBBIAH</NAME1>
+                     <PHONE />
+                     <EMAILID />
+                     <LEAD_STATUS IsChanged="Y">OP</LEAD_STATUS>
+                     <EST_REVENUE>0</EST_REVENUE>
+                     <ROW_ADDED_OPRID IsChanged="Y">C72019</ROW_ADDED_OPRID>
+                     <OPRDEFNDESC IsChanged="Y">Anushree Khilauria</OPRDEFNDESC>
+                     <RC_SUMMARY IsChanged="Y">Business Account Lead</RC_SUMMARY>
+                     <DESCRLONG IsChanged="Y">sdfrwst</DESCRLONG>
+                  </SGB_LEAD_RES_WK>
+               </SGB_LEAD_RS0_WK>
+               <PSCAMA class="R">
+                  <LANGUAGE_CD>ENG</LANGUAGE_CD>
+                  <AUDIT_ACTN />
+                  <BASE_LANGUAGE_CD>ENG</BASE_LANGUAGE_CD>
+                  <MSG_SEQ_FLG />
+                  <PROCESS_INSTANCE>0</PROCESS_INSTANCE>
+                  <PUBLISH_RULE_ID />
+                  <MSGNODENAME />
+               </PSCAMA>
+            </Transaction>
+         </MsgData>
+      </SGB_LEADS_RSP_MSG>
+   </soapenv:Body>
+</soapenv:Envelope>

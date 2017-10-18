@@ -1,40 +1,22 @@
 
 .leads-widget-box {
-    height: 192px;
-    width: 242px;
-    left: 20px;
-    top: 20px;
-    background-color: #000;
-    position: relative;
-    .lead-name {
+    color: #575f65;
+    .lead-contact {
+        padding: 10px 20px;
+        background-color: #efeff0;
         height: 70px;
-        text-align: center;
-        background-color: #f4f3f0;
+        .lead-name {
+            color: #621a4b;
+            text-transform: capitalize;
+        }
+        .lead-email{            
+            font-size: 16px;
+        }
     }
     .lead-details{
-        text-align: center;
-        background-color: #f4f3f0;
-        height: 122px;
+        padding: 20px;
+        background-color: #f7f7f7;
+        height: 120px;
+        margin-bottom: 10px;
     }
-}
-.sizingCheck {
-    height: 30px;
-    width: 30px;
-    float: left;
-    position: relative;
-    left: 13px;
-    top: 9px;
-}
-.text {
-    position: relative;
-    left: 49px;
-    top: 9px;
-    height: 61px;
-    width: 136px;
-}
-.purple {
-    color: purple;
-    float: left;
-    font-size: 14px;
-    font-weight: bold;
 }
