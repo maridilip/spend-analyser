@@ -42,3 +42,12 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+### `Run proxy server`
+
+**Purpose of this proxy server is to get CORS issue fixed in http env(not https)**
+
+To start this proxy server open a new command prompt and traverse to current path
+`upto spend-analyser/src/` and then run the cmd `node server.js` a server will start with an ip and port 
+for eg: `http://localhost:7777` if the server is successfuly started then the following text will appear in the console `Running CORS Anywhere on localhost:7777`
+**Note: the IP and port of the proxy server can be updated, to update please check server.js**
