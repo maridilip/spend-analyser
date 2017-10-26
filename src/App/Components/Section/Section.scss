@@ -1,9 +1,15 @@
-.app-section{
-    .heading{
-        color:#621A4B;
-        line-height: 1.5;
+.app-section {
+    .section-content {
+        float: left;
+        .heading {
+            color: #621A4B;
+            line-height: 1.5;
+        }
+        &.sub-title {
+            margin-left: 20px;
+        }
     }
-    .section-menu{
-        margin-top:20px;
+    .section-menu {
+        margin-top: 20px;
     }
 }

@@ -80,7 +80,7 @@ class Chart extends Component {
 
   render() {
     const { clientWidth: width } = this.state
-    const { height, showLegend, Component, data, labelKey, valueKey } = this.props
+    const { height, showLegend, Component, data, labelKey, valueKey ,tooltipComponent} = this.props
     return <Row>
       <Col md={8} ref={(ref) => this.chartContainer = ref}>
         <svg height={height} width={width}>
@@ -96,6 +96,7 @@ class Chart extends Component {
           position={this.state.position}
           containerProps={{ height, width, labelKey, valueKey }}
           onTransactionDetailsClick={this.onLegendClick}
+          component={tooltipComponent}
         /> : null}
       </Col>
       <Col md={4}>
@@ -112,7 +113,8 @@ Chart.propTypes = {
   showLegend: PropTypes.bool.isRequired,
   data: PropTypes.array.isRequired,
   onSelect: PropTypes.func,
-  responsive: PropTypes.bool
+  responsive: PropTypes.bool,
+  tooltipComponent:PropTypes.element
 }
 
 Chart.defaultProps = {
