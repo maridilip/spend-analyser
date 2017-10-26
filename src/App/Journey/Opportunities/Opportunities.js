@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { connect } from 'react-redux'
 import { getOpportunitiesData } from './service'
 import Section from '../../Components/Section'
 import Loader from '../../Components/Loader'
@@ -43,28 +43,41 @@ class Opportunities extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            opportunitiesData: []
+            opportunitiesData: [],
+            error: false
         }
     }
 
     componentDidMount() {
-        getOpportunitiesData().then(respose => this.setState({
+        const { customerDetails } = this.props
+
+
+        getOpportunitiesData(customerDetails).then(respose => this.setState({
             opportunitiesData: respose.map(item => {
                 item.probabilityPercentage = Math.floor(Math.random() * 99) + 1
                 item.randomAmount = Math.floor(Math.random() * 500000) + 1000
                 return item
             })
-        }))
+        })).catch(err => {
+            this.setState({
+                error: true
+            })
+        })
     }
 
     render() {
         // return <Table config={config} data={this.state.opportunitiesData} />
-        const isLoading = this.state.opportunitiesData.length > 0 ? false : true
+        const isLoading = this.state.opportunitiesData.length > 0 || this.state.error ? false : true
         return <Section header="Opportunities">
-            <Loader active={isLoading}>
+            <Loader active={isLoading} error={this.state.error}>
                 <OpportunitiesWidget data={this.state.opportunitiesData} />
             </Loader>
         </Section>
     }
 }
-export default Opportunities;
+
+const mapStateToProps = state => ({
+    customerDetails: state.leads.selectedCustomer
+})
+
+export default connect(mapStateToProps)(Opportunities);

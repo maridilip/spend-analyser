@@ -1,4 +1,3 @@
-
 .leads-widget-box {
     color: #575f65;
     .lead-contact {
@@ -9,14 +8,18 @@
             color: #621a4b;
             text-transform: capitalize;
         }
-        .lead-email{            
+        .lead-email {
             font-size: 16px;
         }
     }
-    .lead-details{
+    .lead-details {
         padding: 20px;
         background-color: #f7f7f7;
         height: 120px;
         margin-bottom: 10px;
+        overflow: hidden;
+        .leads-desc {
+            text-overflow: ellipsis;
+        }
     }
 }

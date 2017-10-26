@@ -1,4 +1,4 @@
-export default () => (`<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://siebel.com/webservices">
+export default (params) => (`<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://siebel.com/webservices">
 <soapenv:Header>
       <UsernameToken xmlns="http://siebel.com/webservices">BRANCHWOW</UsernameToken>
       <PasswordText xmlns="http://siebel.com/webservices">BRANCHWOW</PasswordText>
@@ -11,7 +11,7 @@ export default () => (`<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.o
          <web:PageSize>5</web:PageSize>
          <web:SortSpec></web:SortSpec>
          <web:IsLastRow></web:IsLastRow>
-         <web:Banker_LId>L098510</web:Banker_LId>
+         <web:Banker_LId>${params.oprId}</web:Banker_LId>
          <web:MyTeam></web:MyTeam>
       </web:GetOpportunities_Input>
    </soapenv:Body>
