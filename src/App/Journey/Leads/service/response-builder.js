@@ -8,9 +8,13 @@ export default (response) => new Promise((resolve, reject) => {
             reject(err)
         } else {
             const leadsObject = extractKeyFromObject(data, 'SGB_LEAD_RS0_WK')
+            const oprId = extractKeyFromObject(leadsObject, 'OPRID')[0]._
             const leadsArray = extractKeyFromObject(leadsObject, 'SGB_LEAD_RES_WK')
             const flattenData = flattenXml2JsonArray(leadsArray)
-            resolve(flattenData)
+            resolve(flattenData.map(item => ({
+                oprId,
+                ...item
+            })))
         }
     })
 })

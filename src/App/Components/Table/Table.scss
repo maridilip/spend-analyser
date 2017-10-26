@@ -11,6 +11,32 @@
         border-bottom: 1px solid #fff;
         color: #621a4b;
         @include cell();
+        th.col-sortable {
+            &:hover {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+                background: #eeeeee;
+                /* Old browsers */
+                background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+                /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
+                /* IE6-9 */
+                cursor: pointer;
+            }
+            &.asc:before {
+                content: "\e093";
+                float: right;
+                font-family: 'Glyphicons Halflings'
+            }
+            &.desc:before {
+                content: "\e094";
+                float: right;
+                font-family: 'Glyphicons Halflings'
+            }
+        }
     }
     .table-list-body {
         background-color: #f3f2f2;

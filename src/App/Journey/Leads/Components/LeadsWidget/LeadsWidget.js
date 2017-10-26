@@ -18,7 +18,7 @@ const LeadsWidget = ({ data, selectCustomer }) => (<WidgetOverlay
         <div className='lead-details'>
             <b>Referred by:</b> {data.OPRDEFNDESC}
             <br />
-            {data.DESCRLONG}
+            <div className={'leads-desc'} title={data.DESCRLONG}>{data.DESCRLONG}</div>
         </div>
     </div>
 </WidgetOverlay >)

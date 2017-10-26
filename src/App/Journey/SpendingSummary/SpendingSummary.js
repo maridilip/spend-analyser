@@ -13,7 +13,7 @@ import Section from '../../Components/Section'
 import Card from '../../Components/Card'
 import {
   TopCategoriesWidget, AccountsWidget, TableVendorName,
-  SpendByCatergoryHeader, TransactionSummaryHeader
+  SpendByCatergoryHeader, TransactionSummaryHeader, ChartToolTip
 } from './Components'
 import { getSpendingSummary } from './service'
 import { formatAmount } from '../../utils'
@@ -31,7 +31,8 @@ const chartProps = {
   data,
   xAxisTicks: 5,
   xAxisOrient: "bottom",
-  Component: ChartTypes.HORIZONTAL_BAR_CHART
+  Component: ChartTypes.HORIZONTAL_BAR_CHART,
+  tooltipComponent: ChartToolTip
 };
 
 const verticalChartProps = {
@@ -46,7 +47,7 @@ const verticalChartProps = {
   },
   Component: ChartTypes.VERTICAL_BAR_CHART,
   valueKey: 'value',
-  labelKey: 'key',
+  labelKey: 'key'
 };
 
 const donutChartProps = {
@@ -63,25 +64,34 @@ const donutChartProps = {
     left: 0,
     bottom: 0,
     right: 0
-  }
+  },
+  tooltipComponent: ChartToolTip
 }
 
 const tableConfig = [{
   label: 'Date',
   field: 'date',
-  width: '25%'
+  width: '15%',
+  dataType: 'date',
+  sortable: true
 }, {
   label: 'Vendor name',
   Component: TableVendorName,
-  width: '30%'
+  width: '40%',
+  dataType: 'string',
+  sortable: true
 }, {
   label: 'Amount',
   field: 'amount',
-  width: '20%'
+  width: '10%',
+  dataType: 'amount',
+  sortable: true
 }, {
   label: 'Category',
   field: 'categoryDesc',
-  width: '25%'
+  width: '35%',
+  dataType: 'string',
+  sortable: true
 }]
 
 class SpendingSummary extends Component {
@@ -127,8 +137,8 @@ class SpendingSummary extends Component {
   getRangeBasedData(serviceResponse) {
     const response = serviceResponse || this.state.serviceResponse
     const extentBasedOnDate = extent(response, (item) => moment(item.date, 'DD/MM/YYYY').toDate())
-    const rangeBasedData = response.map(item=>{
-      item.amount = parseFloat(parseFloat(item.amount.replace(/,/g,'')).toFixed(2))
+    const rangeBasedData = [...response].map(item => {
+      item.amount = `$${formatAmount(parseFloat(item.amount.replace(/[$,]/g, '')).toFixed(2))}`
       return item
     }).filter(item => {
       const maxDate = moment(extentBasedOnDate[1])
@@ -138,9 +148,10 @@ class SpendingSummary extends Component {
     })
     const nestedData = nest()
       .key(d => d.category)
-      .rollup(data => data.reduce((total, current) =>{
-        return total + current.amount
-      }, 0))        
+      .rollup(data => data.reduce((total, current) => {
+        const currentAmount = parseFloat(current.amount.replace(/[$,]/g, ''));
+        return (parseFloat(parseFloat(total + currentAmount).toFixed(2)))
+      }, 0))
       .entries(rangeBasedData)
 
     this.setState({
@@ -187,7 +198,7 @@ class SpendingSummary extends Component {
     const rangeDataCopy = [...this.state.rangeBasedData]
     this.setState({
       tableData: rangeDataCopy.filter(item => {
-        const comparatorString = `${item.field} ${item.vendorName} ${item.amount} ${item.categoryDesc}`.toLowerCase()
+        const comparatorString = `${item.date} ${item.vendorName} ${item.amount} ${item.categoryDesc}`.toLowerCase()
         return comparatorString.indexOf(target.value.toLowerCase()) > -1
       })
     })

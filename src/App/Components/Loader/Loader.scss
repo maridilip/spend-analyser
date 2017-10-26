@@ -1,28 +1,32 @@
-.westpac-loader{
+.westpac-loader {
     position: relative;
-    .with-children{
-        .active{            
-            background: rgba(255,255,255,0.5);
+    .with-children {
+        .active {
+            background: rgba(255, 255, 255, 0.5);
         }
     }
-    .loader{
-        &.loader-hidden{
+    .loader {
+        &.loader-hidden {
             display: none;
         }
-        &.loader-active{
+        &.loader-active {
             display: block;
             position: absolute;
             width: 100%;
             z-index: 999;
-            background: rgba(255,255,255,0.8);
+            background: rgba(255, 255, 255, 0.8);
             height: 100%;
-            .loader-inner{                
+            .loader-inner {
                 margin: 5% auto;
                 width: 40px;
-                &>div{
-                    background-color:#b6000b;
+                &>div {
+                    background-color: #b6000b;
                 }
             }
         }
+    }
+    .error-msg-container {
+        text-align: center;
+        color: #b6000b;
     }
 }

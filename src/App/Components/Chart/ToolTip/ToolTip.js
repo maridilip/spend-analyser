@@ -35,7 +35,7 @@ class ToolTip extends Component {
 
     render() {
         const { left, top } = this.state.offset
-        const { tooltipData, containerProps, children: Component, onTransactionDetailsClick } = this.props
+        const { tooltipData, containerProps, component: Component, onTransactionDetailsClick } = this.props
         return <div ref={(ref) => this.toolTipDom = ref} className={'tool-tip'}
             style={{
                 left: `${left || 0}px`,
@@ -63,5 +63,5 @@ ToolTip.propTypes = {
     tooltipData: PropTypes.object.isRequired,
     position: PropTypes.object.isRequired,
     containerProps: PropTypes.object.isRequired,
-    children: PropTypes.element
+    component: PropTypes.element
 }

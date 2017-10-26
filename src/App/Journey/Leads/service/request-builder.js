@@ -5,7 +5,7 @@ export default (oprID) => (`<soapenv:Envelope xmlns:soapenv="http://schemas.xmls
      <sgb:MsgData>
       <sgb:Transaction>
             <sgb:SGB_LEAD_REQ_WK class="R">
-               <sgb:OPRID>C47514</sgb:OPRID>
+               <sgb:OPRID>${oprID}</sgb:OPRID>
             </sgb:SGB_LEAD_REQ_WK>
       </sgb:Transaction>
       </sgb:MsgData>

@@ -3,7 +3,7 @@ import requestBuilder from './request-builder'
 import responseBuilder from './response-builder'
 import { getDomainUrl } from '../../../utils'
 
-export const getOpportunitiesData = () => {
+export const getOpportunitiesData = (data) => {
     const isLocalHost = getDomainUrl().indexOf('localhost') > -1
     const serviceUrl = 'http://rbdev-p.crm.srv.westpac.com.au/eai_enu/start.swe?SWEExtSource=SecureWebService&SWEExtCmd=Execute&WSSOAP=1'
     const proxyUrl = isLocalHost ? `http://10.98.3.164:7777/` : ''
@@ -15,7 +15,7 @@ export const getOpportunitiesData = () => {
         headers: {
             SOAPAction: '"document/http://siebel.com/webservices:GetOpportunities"'
         },
-        params: requestBuilder()
+        params: requestBuilder(data)
     }
     return ServiceCaller.invoke(config).then(res => responseBuilder(res.data))
 }
