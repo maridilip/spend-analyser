@@ -4,7 +4,7 @@ import responseBuilder from './response-builder'
 import { getDomainUrl } from '../../../utils'
 
 export const getLeadsData = (oprId) => {
-    const isLocalHost = getDomainUrl().indexOf('localhost') > -1
+    const isLocalHost = getDomainUrl().indexOf('localhost') > -1 || getDomainUrl().indexOf('10.98.3.164') > -1
     const serviceUrl = 'http://crmdevx.trusted.stg.com.au:9081/PSIGW/PeopleSoftServiceListeningConnector/SGB_BANKER_LEADS.1.wsdl'
     const proxyUrl = isLocalHost ? 'http://10.98.3.164:7777/' : ''
     const config = {
